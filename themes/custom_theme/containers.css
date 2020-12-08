@@ -275,8 +275,8 @@
 }
 
 .toolbar .divider {
-    background-color: #C5C5C5;
-    border-right: 1px solid #FFF;
+    background-color: #8ccdff;
+    border-right: 1px solid #8ccdff;
     border-left: #cdcdcd;
     position: absolute;
     top: 0;
@@ -546,7 +546,6 @@ ______________________________________________________________
 }
 
 .column.decorated.minimized .vtitle {
-    background: #fff;
     cursor: pointer;
     font-size: 12px;
     line-height: 20px;
@@ -590,7 +589,7 @@ ______________________________________________________________
 }
 
 .column.decorated.tabbed .content > .header > .tabs {
-    background-color: #fff;
+    background-color: #343434;
     display: block;
     height: 28px;
 }
@@ -1700,7 +1699,7 @@ body,
 .column.decorated > .content > .header,
 .column.decorated > .content > .header > .subheader {
     background-color: #343434; /* OLD THEME - background color needs to be white so there are no problems with subheaders */
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 1px solid #666666;
 }
 
 .dialog.overlay.showingSubHeader > .content > .header {
@@ -1708,21 +1707,20 @@ body,
     background-color: #d3d3d3;
 }
 
-.toolbar {
-    background-color: #343434;
-}
-
-.sub.header {
-    background: #343434;
-}
-
 .column.decorated.secondary > .content > .body,
-.column.decorated.tertiary > .content > .body {
+.column.decorated.tertiary > .content > .body,
+.toolbar,
+.sub.header,
+.column.decorated.minimized,
+.column.decorated.minimized .vtitle  {
     background-color: #343434;
+}
+
+.column.decorated.minimized .vtitle {
+    color: #8ccdff;
 }
 
 .column.decorated.minimized {
-    background: #fff;
     border: 0;
 }
 

@@ -3820,7 +3820,7 @@ li.dragging.measure,
 
 #manage_users .twoColumn.manager .tertiary.column,
 #manage_roles .twoColumn.manager .tertiary.column {
-    border-left: 1px solid #e3e3e3;
+    border-left: 1px solid #666;
 }
 
 #manage_roles #properties {
@@ -3911,6 +3911,12 @@ li.dragging.measure,
 #properties #assignedViewList .leaf > .wrap {
     margin-right: 3px;
     margin-left: 3px;
+}
+
+#properties #assignedViewList .leaf > .wrap.over {
+    background-color: transparent !important;
+    color: #fff !important;
+    text-decoration: underline;
 }
 
 #properties #assignedView .searchLockup > .wrap > input[type="text"],
@@ -4098,7 +4104,7 @@ li.dragging.measure,
 }
 
 #settings .pane > .content {
-    border-bottom: 1px solid #e3e3e3;
+    border-bottom: 1px solid #666;
 }
 
 #settings .pane.settings .control.input.text > .wrap {
@@ -4205,6 +4211,11 @@ li.dragging.measure,
     width: auto;
 }
 
+select {
+    background-color: #000;
+    color: #b0b0b0;
+}
+
 /* importDataFile */
 
 #importDataFile #fileUploadForm {
@@ -4302,8 +4313,8 @@ li.dragging.measure,
 
 #reportViewer .body.oneColumn > .header,
 #reportViewer .body.twoColumn > .header {
-    background-color: #fff;
-    border-bottom: 2px solid #062e79;
+    background-color: #343434;
+    border-bottom: 2px solid #e7e7e7;
     display: flex;
     font-family: source_sans_proregular, Franklin Gothic, Verdana, Arial, sans-serif;
     height: 40px;
@@ -4316,7 +4327,7 @@ li.dragging.measure,
     background-position: 0 -32px;
     background-repeat: no-repeat;
     background-size: 27px;
-    color: #333333;
+    color: #e7e7e7;
     flex: 0 1 auto;
     flex-wrap: nowrap;
     font-size: 22px;

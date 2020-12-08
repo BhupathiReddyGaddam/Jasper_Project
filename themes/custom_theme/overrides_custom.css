@@ -36,7 +36,8 @@ Place styles for simple UI customization in this file
 .palette08,
 .button.action.primary.disabled,
 .button.action.primary[disabled] {
-	color: #97cffe;
+    color: #666;
+    border: 1px solid #666;
 }
 
 .palette08_bkgd {
@@ -47,8 +48,7 @@ Place styles for simple UI customization in this file
 	background-color: #6aa707;
 }
 
-.content .header > .title,
-.column.decorated.minimized .vtitle {
+.content .header > .title {
     color: #666666;
 }
 
@@ -75,8 +75,8 @@ Place styles for simple UI customization in this file
 
 .addNewItem, a.addNewItem,
 .hyperlinkPropertiesSection a.addNewItem{
-    border-color: #3bafff;
-    color: #3bafff;
+    border-color: #8ccdff;
+    color: #8ccdff;
 }
 
 .button.capsule.superfocus.subfocus:hover,
@@ -134,12 +134,7 @@ Place styles for simple UI customization in this file
 .workflow-description a:hover,
 .workflow-buttonContainer .button,
 .plusminus .node > .wrap > .jrbookmark,
-.list.settings .panel.pane.settings .header > .title,
-.tabSet.horizontal.buttons .selected > .button > .wrap,
-.tabSet.horizontal.buttons .button.over,
-.tabSet.horizontal.buttons .button.pressed,
 .resourceBlock-title,
-.column.decorated.minimized .vtitle,
 #loginPage #metaLinks li,
 #loginPage #metaLinks a,
 #loginPage #metaLinks a:hover,
@@ -148,7 +143,9 @@ Place styles for simple UI customization in this file
     color: #0081cb; /* TICBO medium blue */
 }
 
-.launcher {
+.launcher,
+.list.settings .panel.pane.settings .header > .title,
+.textAccent02 {
     color: #8ccdff;
 }
 
@@ -160,10 +157,6 @@ Place styles for simple UI customization in this file
 .flow #stepDisplay .column.primary .header .title,
 .flow #stepDisplay .column.secondary .header .title {
     color: #e7e7e7;
-}
-
-.textAccent02 {
-    color: #8ccdff;
 }
 
 #fileTypeLabel [disabled] {
@@ -189,12 +182,16 @@ Place styles for simple UI customization in this file
 .list > li.selected > .wrap.over,
  div:focus li.selected > .wrap,
 .royal_bkgd,
-.menu.vertical li >.wrap.over,
-.menu.vertical li > .wrap.pressed,
 .list.responsive > li >.wrap.pressed,
 .list.responsive > li.selected:focus > .wrap,
 .list.responsive > li.selected:focus > .wrap.over {
-	background-color: #8ccdff;
+    background-color: #8ccdff !important;
+    color: #000000 !important;
+}
+
+#sortMode.list > li.selected > .wrap {
+    background-color: transparent !important;
+    color: #85daf1 !important;
 }
 
 .cerulean {
@@ -406,10 +403,55 @@ a#about:active {
     background-color: #0081cb;
 }
 
-/* dialog */
+/* confirm dialog */
 .jr-mDialog-header-title.jr {
-    color: #0081cb;
+    color: #e7e7e7;
 }
+
+.jr-mDialog.jr {
+    background-color: #343434;
+    border: 1px solid #666;
+    box-shadow: 0 1px #FFFFFF inset, 0 0 5px rgba(34, 25, 25, 0.4);
+    color: #b0b0b0;
+    font-family: source_sans_proregular, Franklin Gothic, Verdana, Arial, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    min-width: 18.182em;
+    z-index: 5000;
+    border-radius: 4px;
+  }
+  
+  .jr-mDialog-header.jr {
+    background-color: #343434;
+    cursor: move;
+    height: 2.909em;
+    padding-left: 1.091em;
+    padding-right: 1.091em;
+    position: relative;
+    border-bottom: 1px solid #8ccdff;
+  }
+
+  .jr-mDialog-body.jr {
+    background-color: #343434;
+    height: calc(100% - 6.545em);
+    overflow-y: auto;
+    position: relative;
+    min-height: 7em;
+    color: #b0b0b0;
+    border-bottom: 1px solid #8ccdff;
+  }
+
+  .jr-mDialog-footer.jr {
+    background-color: #343434;
+    height: 3.636em;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.545em 0.909em 0.455em 0.909em;
+    position: relative;
+    white-space: nowrap;
+    float: right;
+    border-top: none;
+  }
 
 /* scrollbar ====================================== */
 ::-webkit-scrollbar {

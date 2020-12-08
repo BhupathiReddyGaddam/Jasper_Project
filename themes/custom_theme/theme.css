@@ -227,6 +227,16 @@ ul.decorated {
 	line-height:1.272em;/* 11 x 1.272 = 14 */
 }
 
+#errorPopupContents h3 {
+	color: #e7e7e7;
+}
+
+#errorPopupContents #errorMessages {
+	color: #b0b0b0;
+}
+
+#errorPopupContents .dialog > .content > .body
+
 .small,
 h5,
 .panel.widget .title,
@@ -326,9 +336,7 @@ button,
 .pressed .resourceDescription,
 .pressed .resourcePath,
 .list.collapsible>li>.wrap.pressed,
-.list.collapsible .selected>.wrap,
 .list.resources .selected p.resourceName,
-#entitiesList .selected>.wrap,
 #entitiesList .wrap.pressed,
 .authorityPicker .selected,
 .authorityPicker .highlighted.selected,
@@ -336,6 +344,12 @@ button,
 #joinsList .leaf.selected > .wrap {
 	color: #fff;
 }
+
+/* .list.collapsible .selected>.wrap,
+#entitiesList .selected>.wrap {
+	color: #000000;
+} */
+
 
 .button.up.primary {
 	color: #8ccdff;
@@ -368,6 +382,15 @@ button,
 	color:#aaa;
 }
 
+.disabled,
+.button.disabled,
+[disabled],
+.button[disabled],
+.button.primary[disabled] {
+	color: #666 !important;
+	border: 1px solid #666;
+}
+
 #browser_button[disabled] {
 	color: #b0b0b0;
 	border: 1px solid #666;
@@ -393,12 +416,6 @@ button,
 .header,
 .foundItem,
 #metaLinks,
-.group legend.label,
-legend,
-label,
-.label,
-.label.wrap,
-legend.label>.wrap,
 .tabular,
 .list.settings .node>.wrap .title,
 .list.inputSet,
@@ -420,13 +437,28 @@ ul.decorated,
 	color:#666;
 }
 
+.group legend.label,
+legend,
+label,
+.label,
+.label.wrap,
+legend.label>.wrap {
+	color: #e7e7e7;
+}
+
 .control.path>.step>.wrap {
 	color: #8ccdff;
 }
 
 #resultsListHeader p,
-#resultsListHeader h3 {
+#resultsListHeader h3,
+.list.collapsible .selected>.wrap,
+.collapsible > li > .wrap .column.three.resourceType {
 	color: #000000;
+}
+
+#entitiesList .selected>.wrap {
+	color: #000000 !important;
 }
 
 .control.path>.step>.wrap.over,
@@ -470,9 +502,9 @@ ul.decorated,
 	color: #b0b0b0;
 }
 
-.collapsible > li > .wrap .column.three.resourceType {
+/* .collapsible > li > .wrap .column.three.resourceType {
 	color: #000000;
-}
+} */
 
 /* .gray80 */
 .palette06,
@@ -485,7 +517,7 @@ body,
 }
 
 .list.settings .node > .wrap .title {
-	color: #444;
+	color: #e7e7e7;
 }
 
 /* .black */

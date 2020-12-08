@@ -175,6 +175,9 @@ fieldset .sectionHeader {
 	width: auto;
 	margin-top: 4px;
 	margin-left: 6px;
+	background-color: #000;
+    color: #b0b0b0;
+    border-radius: 2px;
 }
 
 .control.inline .launcher,
@@ -1245,8 +1248,7 @@ http://www.dynarch.com/projects/calendar/old/
 
 .textPlus > .button {
 	background: none;
-	border: 1px solid #c0c0c0;
-	border-top: 1px solid #848484;
+	border: 1px solid #666;
 	border-left: none;
 	display:inline-block;
 	height: 22px;
@@ -1263,7 +1265,7 @@ http://www.dynarch.com/projects/calendar/old/
 }
 
 .textPlus .button.search > .icon {
-	background-color: #fff;
+	background-color: #000;
 	background-image: url("images/search_icons_sprite@1x.png");
 	background-repeat: no-repeat;
     background-size: 80px;
@@ -1462,10 +1464,16 @@ input.booleanComboInput{
 
 .control.searchLockup > .wrap,
 .control.booleanInput > .wrap {
-	background: #ffffff;
-	border: 1px solid #999;
+	background: #000;
+	border: 1px solid #666;
 	height: 22px;
 	position: relative;
+	border-radius: 4px;
+}
+
+#globalSearch.control.searchLockup > .wrap,
+#globalSearch.control.booleanInput > .wrap {
+	background-color: #fff;
 }
 
 .control.searchLockup > .wrap>input[type=text] {
@@ -1529,7 +1537,9 @@ input.booleanComboInput{
 }
 
 #secondarySearchBox.control.searchLockup > .wrap {
-	border: 1px solid #e2e2e2;
+	border: 1px solid #666;
+    background-color: #000;
+    border-radius: 4px;
 }
 
 #globalSearch.control.searchLockup {
@@ -1630,7 +1640,6 @@ input.booleanComboInput{
 
 :root #secondarySearchBox.control.searchLockup > .wrap>input[type=text] {
 	margin-top: 0;
-	background-color: #fff !important;
 }
 
 #secondarySearchBox.control.searchLockup > .button.search {
@@ -1763,24 +1772,24 @@ input.booleanComboInput{
 }
 
 .tabSet.horizontal.buttons {
-	background-color: #fff;
+    background-color: #242424;
     float: left;
-    height: 27px;
-    margin-bottom: 0;
+    height: 42px;
     overflow: visible;
-    padding-right: 20px;
+    padding: 6px 20px 6px 4px;
     position: relative;
     z-index: 10;
+    border-radius: 0px 10px 0px 0px;
 }
 
-.tabs > .tabSet.horizontal.buttons {
+/* .tabs > .tabSet.horizontal.buttons {
     float: right;
-}
+} */
 
 .tabSet.horizontal.buttons li {
 	border: none;
 	height: 25px;
-	margin: 2px 2px 0 2px;
+	margin: 2px 12px 0 2px;
 	padding: 0;
 }
 
@@ -1797,7 +1806,7 @@ input.booleanComboInput{
 }
 
 .tabSet.horizontal.buttons .selected .button > .wrap {
-	height: 26px;
+	height: 24px;
 	line-height: 25px;
 }
 
@@ -1808,24 +1817,37 @@ input.booleanComboInput{
 }
 
 .tabSet.anchor {
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #e3e3e3;
-    border-top: 1px solid #e3e3e3;
+	background-color: #343434;
+    border-bottom: 1px solid #666;
+    border-top: 1px solid #666;
     height: 8px;
-    top: 28px;
+    top: 45px;
 }
 
 /* .tabSet.horizontal.buttons. .selected */
 
+.tabSet.horizontal.buttons .button {
+	border-radius: 26px;
+	color: #85daf1;
+}
+
 .tabSet.horizontal.buttons > .tab.selected > .button,
 .tabSet.horizontal.buttons > .tab.selected > .button.over,
 .tabSet.horizontal.buttons > .tab.selected > .button.pressed {
-	background-color: #f4f4f4;
-	border-top: 1px solid #e3e3e3;
-	border-right: 1px solid #e3e3e3;
-	border-bottom: none;
-	border-left: 1px solid #e3e3e3;
-	cursor: default;
+    background-color: #8ccdff;
+    cursor: default;
+    border-radius: 26px; 
+}
+
+.tabSet.horizontal.buttons .button.over {
+	border-radius: 26px;
+	background-color: #e7e7e7 !important;
+}
+
+.tabSet.horizontal.buttons .selected > .button > .wrap,
+.tabSet.horizontal.buttons .button.over,
+.tabSet.horizontal.buttons .button.pressed {
+	color: #000;
 }
 
 /* Reverse Style Tabs, active tabs are white */

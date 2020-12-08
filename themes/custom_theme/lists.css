@@ -207,6 +207,18 @@ and (max-device-width : 1024px) {
     white-space: nowrap;
 }
 
+#entitiesList.list.tabular > li > .wrap,
+#entitiesList.collapsible > li > .wrap {
+    color: #b0b0b0;
+    background-color: #363636;
+    border-top: 1px solid #666666;
+}
+
+#entitiesList.list.tabular > li:nth-child(odd) > .wrap,
+#entitiesList.collapsible > li:nth-child(odd) > .wrap {
+    background-color: #2d2c2c;
+}
+
 #messageList.list.tabular > li > .wrap {
     color: #000000;
 }
@@ -298,9 +310,8 @@ and (max-device-width : 1024px) {
 .list.filters > li > .wrap.header,
 .list.filters > li > .wrap.over.header,
 .list.filters > li > .wrap.pressed.header {
-    background-color: #f0f0f0;
-    border-bottom: #e3e3e3;
-    border-top: 1px solid #fff;
+    background-color: #8ccdff;
+    color: #000 !important;
 }
 
 .list.filters > li > .wrap,
@@ -1237,7 +1248,7 @@ and (max-device-width : 1024px) {
 }
 
 .list.tabular > li > .wrap {
-    border-top:1px solid #e8e8e8;
+    border-top:1px solid #666;
     clear:both;
     padding-left:20px;
     overflow:hidden;
@@ -1592,12 +1603,9 @@ and (max-device-width : 1024px) {
     border-top: none !important;
 }
 
-.list.resources .wrap {
-    border-bottom: 1px solid #666;
-}
-
+.list.resources .wrap,
 .list.jobs .wrap {
-    border-bottom: 1px solid #E3E9EF;
+    border-bottom: 1px solid #666666;
 }
 
 .responsive .stripe.wrap {
@@ -1961,11 +1969,11 @@ and (max-device-width : 1024px) {
 }
 
 .list.settings .node > .wrap {
-    border-top: 1px solid #FFF;
-    border-bottom: 1px solid #e5e5e5;
-    background-color: #F0F0F0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #343434;
     height: 28px;
-    padding-left: 12px;
+    padding-left: 12px; 
 }
 
 .list.settings .node.closed .description {
@@ -1977,9 +1985,9 @@ and (max-device-width : 1024px) {
 }
 
 .list.settings .node > .description {
-    background-color: #fff;
+    background-color: #343434;
     border: none;
-    color: #999999;
+    color: #e7e7e7;
     margin: 0;
     padding: 5px 0 10px 12px;
 }
@@ -2164,9 +2172,19 @@ and (max-device-width : 1024px) {
     cursor: pointer;
 }
 
+#entitiesList .button.over {
+    color: #8ccdff !important;
+}
+
 .list > li.folders.node.closed .wrap.button.over,
 .list > li.folders.node.open .wrap.button.over {
     color: #8ccdff !important
+}
+
+.list > li.folders.node.closed.subfocus .wrap.button.over,
+.list > li.folders.node.open.subfocus .wrap.button.over,
+#entitiesList li.subfocus .button.over {
+    color: #000 !important
 }
 
 .list.tabular > .leaf > .header > .wrap,
