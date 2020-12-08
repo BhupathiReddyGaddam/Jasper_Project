@@ -111,6 +111,7 @@ FLOATING DIALOGS
 	top:70px;
 	bottom:25px;
 	padding: 0;
+	border: 1px solid #666;
 }
 
 .dialog.permissions .groupBox > .content > .body {
@@ -177,7 +178,7 @@ FLOATING DIALOGS
 .dialog.loading .spinner {
     animation: spin 1s infinite linear;
     border: 7px solid rgba(0, 0, 0, 0.1);
-    border-top-color: #0081cb;
+    border-top-color: #8ccdff;
     border-radius: 50%;
     display: inline-block;
     height: 32px;
@@ -262,6 +263,7 @@ FLOATING DIALOGS
 	padding: 20px;
 	white-space:normal;
 	word-wrap:break-word;
+	color: #b0b0b0;
 }
 
 

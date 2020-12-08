@@ -1603,6 +1603,7 @@ In particular, .sizeable requires that .dialog > .content be position:absolute.
     position: absolute;
     right: 20px;
     top: 18px;
+    border: 1px solid #666;
 }
 
 .dialog.sizeable .groupBox > .content {

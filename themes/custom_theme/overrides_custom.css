@@ -84,7 +84,8 @@ Place styles for simple UI customization in this file
 .button.capsule.down,
 .button.capsule.down.over,
 .button.capsule.down.pressed {
-    background-color: #0081cb;
+    background-color: #8ccdff;
+    color: #000 !important;
 }
 
 .button.capsule.up.pressed,
@@ -97,7 +98,7 @@ Place styles for simple UI customization in this file
 .dashboardToolbar #export.pressed,
 .dashboardCanvas .dashletToolbar .button.text.cancelDashletButton,
 .dashboardCanvas .dashletToolbar .button.exportDashletButton.pressed {
-    background-color: #0081cb;
+    background-color: #8ccdff;
 }
 
 .action.small.up.over,
@@ -341,7 +342,7 @@ a#about:active {
 #reportViewer .toolsRight .button.action.down,
 #reportViewer .toolsRight .button.action.down.over,
 #reportViewer .toolsRight .button.action.down.pressed {
-    background-color: #0081cb;
+    background-color: #8ccdff;
 }
 
 #reportPartsContainer .button.action.up.over,

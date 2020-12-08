@@ -704,7 +704,7 @@
 }
 
 .addNewDataSource #stepDisplay .row.instructions {
-    background-color: #f7f7f7;
+    background-color: #343434;
     margin: 0;
     padding: 0 100px;
 }
@@ -733,7 +733,7 @@
 }
 
 .addNewDataSource #stepDisplay > .row.oneColumn > .column.primary > .content >.header {
-    background-color: #f7f7f7;
+    background-color: #343434;
     border-bottom: none;
     padding: 4px 24px 18px 100px;
 }
@@ -750,12 +750,19 @@
 
 .addNewDataSource #stepDisplay .column.primary .header .title.disabled {
     color: #666666;
+    border: none;
 }
 
 .addNewDataSource #stepDisplay select {
-    background-color: #ffffff;
+    background-color: #000;
     font-family: source_sans_proregular, Franklin Gothic, Verdana, Arial, sans-serif;;
     font-size: 13px;
+    color: #b0b0b0 !important;
+    border-radius: 2px;
+}
+
+.addNewDataSource #stepDisplay select[disabled] {
+    background-color: #343434;
 }
 
 .addNewDataSource #stepDisplay .body.dataSourceBody {
@@ -786,13 +793,13 @@
 
 .addNewDataSource #stepDisplay .control.radio > .wrap,
 .addNewDataSource #stepDisplay .control.checkBox > .wrap {
-    font-family: source_sans_proregular, Franklin Gothic, Verdana, Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 .addNewDataSource .control.input input[type="text"],
 .addNewDataSource .control.input input[type="password"]{
     background-image: none;
-    border: 1px solid #cecece;
+    border: 1px solid #666;
     height: 28px;
 }
 
@@ -1205,14 +1212,14 @@ x:-o-prefocus, #selectedDataSources label {
 }
 
 #selectedDataSources .content {
-    border: 1px solid #D4D5D5;
+    border: 1px solid #666;
     height: 300px;
     margin-top: 6px;
     overflow-y: auto;
 }
 
 #stepDisplay #selectedDataSourcesHeader {
-    background-color: #ebebeb;
+    background-color: #85daf1;
     border-bottom: none;
     height: 30px;
 }
@@ -1261,7 +1268,7 @@ x:-o-prefocus, #selectedDataSources label {
 }
 
 #selectedSubDataSourcesList .leaf {
-    border-bottom: 1px solid #EFEFEF;
+    border-bottom: 1px solid #666;
 }
 
 #selectedSubDataSourcesList .column.error {
@@ -1281,6 +1288,7 @@ x:-o-prefocus, #selectedDataSources label {
 
 #selectedDataSourcesHeader p {
     line-height: 24px;
+    color: #000;
 }
 
 #selectedSubDataSourcesList .dataSourceName {
@@ -4485,6 +4493,7 @@ select {
     background-image: url(images/button_action_icons_sprite@1x.png);
     background-repeat: no-repeat;
     background-size: 240px;
+    filter: invert(100%) sepia(100%) hue-rotate(-180deg) saturate(3);
 }
 
 /* 2x BUTTON ICONS */
@@ -4597,7 +4606,7 @@ select {
 }
 
 #asyncCancel.button .wrap {
-    color: #fff;
+    color: #000;
     font-size: 12px;
     padding-left: 30px;
 }
@@ -4689,6 +4698,7 @@ select {
     background-size: 240px;
     background-position: -54px -239px;
     width: 100%;
+    filter: invert(100%) sepia(100%) hue-rotate(-180deg) saturate(3);
 }
 
 /* 2x BUTTON ICONS */
@@ -5197,7 +5207,7 @@ div#reportPartsContainer span {
     word-wrap: break-word;
     margin-top: 6px;
     padding: 2px 3px;
-    color: #333;
+    color: #b0b0b0;
 }
 
 #resultsList ul.sublist p {

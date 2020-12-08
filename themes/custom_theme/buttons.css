@@ -378,7 +378,8 @@ button[disabled] .indicator {
 	width: 34px;
     background-image: url(images/button_action_icons_sprite@1x.png);
 	background-repeat: no-repeat;
-    background-size: 240px;
+	background-size: 240px;
+	filter: invert(100%) sepia(100%) hue-rotate(-180deg) saturate(3);
 }
 
 /* 2x ACTION BUTTON ICONS */

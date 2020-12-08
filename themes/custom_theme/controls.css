@@ -180,6 +180,10 @@ fieldset .sectionHeader {
     border-radius: 2px;
 }
 
+.control.inline>select[disabled] {
+	background-color: #343434;
+}
+
 .control.inline .launcher,
 .launcher.inline {
 	display:inline;
@@ -1007,7 +1011,7 @@ http://www.dynarch.com/projects/calendar/old/
 	float: left;
 	margin:2px 8px 8px 2px; /* moves visual top and left to actual */
 	position: relative;
-	border:1px solid #d4d5d5;
+	border:1px solid #666;
 }
 
 .groupBox .groupBox {
@@ -1288,6 +1292,7 @@ http://www.dynarch.com/projects/calendar/old/
 	background-position: 3px -84px;
 	height: 20px;
 	width: 18px;
+	filter: invert(100%) sepia(100%) hue-rotate(-180deg) saturate(3);
 }
 /* 2x BUTTON ICONS */
 @media (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi){

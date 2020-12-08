@@ -94,6 +94,7 @@ body.dashboardViewFrame, body.noDecoration {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 	clear:both;
+	color: #e7e7e7;
 }
 
 h1 {
@@ -324,7 +325,6 @@ button,
 #metaLinks a,
 #metaLinks a:hover,
 #metaLinks a:active,
-#selectedSubDataSourcesList .leaf.selected .dataSourceName,
 .list.collapsible>li>.selected>.wrap,
 .list.filters>.leaf>.wrap.pressed,
 .list.type_basic .wrap.pressed > .jrbookmark,
@@ -343,6 +343,10 @@ button,
 .workflow-buttonContainer .button,
 #joinsList .leaf.selected > .wrap {
 	color: #fff;
+}
+
+#selectedSubDataSourcesList .leaf.selected .dataSourceName {
+	color: #000;
 }
 
 /* .list.collapsible .selected>.wrap,
@@ -419,7 +423,6 @@ button,
 .tabular,
 .list.settings .node>.wrap .title,
 .list.inputSet,
-#serverError h3,
 #addResource_locateDataSource #newDataSourceLink.disabled,
 #addResource_locateQuery #newQueryLink.disabled,
 #addResource_inputControl_information .list.twoColumn > .node > .wrap,
@@ -435,6 +438,14 @@ ul.decorated,
 .attributesTable > .thead .table-column,
 .attributesTable > .tbody .table-row {
 	color:#666;
+}
+
+#serverError h3 {
+	color: #e7e7e7;
+}
+
+#errorMessages {
+	color: #b0b0b0;
 }
 
 .group legend.label,
