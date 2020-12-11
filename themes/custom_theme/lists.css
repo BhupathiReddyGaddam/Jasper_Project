@@ -192,7 +192,6 @@ and (max-device-width : 1024px) {
     line-height: 2em;
 }
 
-.collapsible > li > .wrap,
 .list.tabular > li > .wrap,
 .list.filters > li > .wrap,
 .list.fields > li > .wrap {
@@ -205,6 +204,10 @@ and (max-device-width : 1024px) {
     text-decoration: none;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.collapsible > li > .wrap {
+    color: #e7e7e7;
 }
 
 #entitiesList.list.tabular > li > .wrap,
@@ -2178,7 +2181,7 @@ and (max-device-width : 1024px) {
 
 .list > li.folders.node.closed .wrap.button.over,
 .list > li.folders.node.open .wrap.button.over {
-    color: #8ccdff !important
+    color: #e7e7e7 !important
 }
 
 .list > li.folders.node.closed.subfocus .wrap.button.over,

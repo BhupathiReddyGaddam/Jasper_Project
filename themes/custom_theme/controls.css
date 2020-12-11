@@ -1478,7 +1478,7 @@ input.booleanComboInput{
 
 #globalSearch.control.searchLockup > .wrap,
 #globalSearch.control.booleanInput > .wrap {
-	background-color: #fff;
+	background-color: #e7e7e7;
 }
 
 .control.searchLockup > .wrap>input[type=text] {
@@ -1570,7 +1570,7 @@ input.booleanComboInput{
     margin: 0;
     padding: 0 0 0 6px;
 	width: 200px;
-	background-color: #fff !important;
+	background-color: #e7e7e7 !important;
 }
 
 #globalSearch .button.search,
