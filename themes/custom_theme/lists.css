@@ -212,7 +212,7 @@ and (max-device-width : 1024px) {
 
 #entitiesList.list.tabular > li > .wrap,
 #entitiesList.collapsible > li > .wrap {
-    color: #b0b0b0;
+    color: #e7e7e7;
     background-color: #363636;
     border-top: 1px solid #666666;
 }
